@@ -9,7 +9,6 @@ Panels:
         - /RobotModel1
         - /TF1
         - /TF1/Frames1
-        - /Axes1
       Splitter Ratio: 0.5
     Tree Height: 787
   - Class: rviz/Selection
@@ -70,6 +69,14 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        camera_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        holder_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         link_1:
           Alpha: 1
           Show Axes: false
@@ -119,10 +126,10 @@ Visualization Manager:
           Value: true
         base_link:
           Value: true
-        brush_link:
-          Value: false
         camera_link:
-          Value: false
+          Value: true
+        holder_link:
+          Value: true
         link_1:
           Value: true
         link_2:
@@ -134,7 +141,7 @@ Visualization Manager:
         link_5:
           Value: true
         link_6:
-          Value: false
+          Value: true
         tool0:
           Value: false
       Marker Scale: 1
@@ -152,28 +159,12 @@ Visualization Manager:
                 link_4:
                   link_5:
                     link_6:
-                      brush_link:
-                        {}
-                      camera_link:
-                        {}
+                      holder_link:
+                        camera_link:
+                          {}
                       tool0:
                         {}
       Update Interval: 0
-      Value: true
-    - Class: rviz/Axes
-      Enabled: true
-      Length: 0.180000007
-      Name: Axes
-      Radius: 0.00999999978
-      Reference Frame: brush_link
-      Value: true
-    - Class: rviz/Marker
-      Enabled: true
-      Marker Topic: visualization_marker
-      Name: Marker
-      Namespaces:
-        {}
-      Queue Size: 100
       Value: true
   Enabled: true
   Global Options:
@@ -196,7 +187,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.45080876
+      Distance: 4.08602524
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
@@ -211,10 +202,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.270397991
+      Pitch: 0.595398009
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.72858
+      Yaw: 0.230400503
     Saved: ~
 Window Geometry:
   Displays:
